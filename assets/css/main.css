@@ -5,6 +5,10 @@
 	--turq: #34a8c5;
 	--breakpoint: 700px;
 	--top-pad: 5vh;
+	--font-xxl: 4vh;
+	--font-xl: 1.5vw;
+	--font-l: 1.2vw;
+	--font-m: 1vw;
 }
 
 @font-face {
@@ -55,67 +59,60 @@ h1 {
 	float: left;
 }
 
-.rfont1p2 {
-	font-size: 1.2vw;
+.font-l {
+	font-size: var(--font-l);
 }
 
-.rfont1p5 {
-	font-size: 1.5vw;
+.font-xl {
+	font-size: var(--font-xl);
 }
 
-.rfont2p5 {
-	font-size: 2.5vw;
-}
-
-.rfont4 {
-	font-size: 4vw;
+.font-xxl {
+	font-size: var(--font-xxl);
 }
 
 
 #container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	/*grid-template-columns: 1fr 1fr 2fr;*/
+	grid-template-columns: repeat(3, 1fr);
 }
 
 
 /*Side Bar*/
 
 #info-container {
-	background-color: var(--light-bg);
-	/*width: 40%;*/
-	height: 100%;
-	min-height: 100vh;
 	display: grid;
+	background-color: var(--light-bg);
+	height: 100%;
+	min-height: 100%;
 	justify-items: center;
 }
 
 #info {
+	width: 95%;
 	padding: 5%;
 	padding-top: var(--top-pad);
-	width: 95%;
 }
 
 #avatar {
+	width: 100%;
 	border-radius: 20px;
 	border: 4px solid var(--bright-purple);
 	object-fit: contain;
-	width: 100%;
 }
 
 #name-social-container {
-	color: var(--turq);
 	display: grid;
+	color: var(--turq);
 	place-items: center;
-	align-items: center;
 	text-align: center;
 }
 
 #social-container {
-	padding-top: 24px;
-	padding-bottom: 12px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	padding-top: 24px;
+	padding-bottom: 12px;
 	place-items: center;
 }
 
@@ -134,7 +131,7 @@ h1 {
 }
 
 .skill-block {
-	padding: 1cqw;
+	padding: 0.8cqw;
 	justify-self: center;
 	text-align: center;
 	background: var(--bright-purple);
@@ -142,6 +139,7 @@ h1 {
 	border-radius: 30px;
 	margin: 0.8cqw;
 	width: 95%;
+	font-size: var(--font-l);
 }
 
 .skill-bubble-container {
@@ -151,7 +149,6 @@ h1 {
 	align-content: space-around;
 	padding: 0.2cqw;
 	margin-bottom: 10%;
-	/*border-radius: 40px;*/
 	border: dashed 2px var(--bright-purple);
 }
 
@@ -161,6 +158,7 @@ h1 {
 	text-align: center;
 	background: var(--turq);
 	color: var(--dark-bg);
+	font-size: var(--font-m);
 	border-radius: 30px;
 	min-width: 50px;
 }
@@ -170,28 +168,22 @@ h1 {
 }
 
 
-.timeline-container {
-	/*max-width: 650px;*/
-	/*margin: 50px auto;*/
-}
+#timeline-container {}
 
-.timeline {
+#timeline {
 	position: relative;
-	/*padding-left: 4rem;*/
 	padding: 2cqw;
 	padding-top: var(--top-pad);
-	/*margin: 0 0 0 30px;*/
 	color: var(--dark-bg);
 
 	&:before {
 		content: '';
 		position: absolute;
-		/*left: 7cqw;*/
 		left: 3cqw;
-		top: 0;
-		margin-top: calc(var(--top-pad) + 5px);
+		top: calc(var(--top-pad) + 2px);
+		/*margin-top: calc(var(--top-pad));*/
 		width: 4px;
-		height: calc(100% - var(--top-pad));
+		height: calc(100% - var(--top-pad) - 5px);
 		background: var(--bright-purple);
 	}
 
@@ -201,24 +193,19 @@ h1 {
 
 		.timeline-marker {
 			position: absolute;
-			/*left: -100px;*/
-			/*left: 2cqw;*/
-			/*top: 4px;*/
-			/*width: 150px;*/
-			width: 10cqw;
+			width: 8cqw;
 			border-radius: 20px;
 			text-align: center;
-			padding: 10px;
-			/*font-size: 2rem;*/
+			padding: 7px;
 			background: var(--bright-purple);
-			/*box-shadow: 0 0 5px var(--turq);*/
 			border: solid 2px var(--light-bg);
+			font-size: var(--font-l);
 		}
 
 		.timeline-break {
 			content: '';
 			position: relative;
-			height: 4rem;
+			height: 6vh;
 			width: 100%;
 		}
 
@@ -226,15 +213,12 @@ h1 {
 			background: var(--turq);
 			border-radius: 10px;
 			position: relative;
-			/*left: 7cqw;*/
-			/*margin-left: 7cqw;*/
 			margin-left: 3cqw;
-			/*top: 3.5rem;*/
+			margin-bottom: 4vh;
 			border: solid 2px var(--light-bg);
 			padding: 20px 20px 15px;
 			box-shadow: 1px 3px 9px rgba(0,0,0,.1);
 			max-width: 88cqw;
-			/*margin-right: 10%;*/
 			justify-items: center;
 
 			&:before {
@@ -250,20 +234,19 @@ h1 {
 			}
 
 			.timeline-title {
-				margin-bottom: 1.4rem;
+				margin-bottom: 2vh;
 				background: var(--bright-purple);
 				padding: 10px;
 				border-radius: 3px;
 				border: solid 2px var(--dark-bg);
 				text-align: center;
-				/*font-size: 1.5rem;*/
-				font-size: 1.5vw;
+				font-size: var(--font-l);
 				box-shadow: 0 0 5px var(--dark-bg);
-				justify-self: center;
 			}
 
 			.timeline-text {
 				text-align: center;
+				font-size: var(--font-m);
 			}
 		}
 	}
