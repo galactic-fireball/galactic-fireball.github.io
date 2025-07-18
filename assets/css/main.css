@@ -32,6 +32,10 @@ h1 {
 	text-align: center;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
 
 .pad4 {
 	padding: 4px;
@@ -72,7 +76,7 @@ h1 {
 }
 
 
-#container {
+#summary-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
@@ -250,4 +254,54 @@ h1 {
 			}
 		}
 	}
+}
+
+#experience-container {
+	margin: 1%;
+	padding: 1%;
+}
+
+#experience-title {
+	margin: 1%;
+	padding: 2%;
+	font-size: var(--font-xxl);
+	border: dashed 2px var(--bright-purple);
+}
+
+.experience-item {
+	padding: 1% 4% 1% 4%;
+}
+
+.experience-item-title {
+	display: flex;
+	align-items: center;
+	background: var(--turq);
+	color: var(--dark-bg);
+	padding: 2%;
+	font-size: var(--font-xl);
+	border: solid 2px var(--bright-purple);
+	border-radius: 30px;
+}
+
+.experience-item-title-icon {
+	margin: 0 2% 0 2%;
+}
+
+.experience-item-title-text {
+	margin: 1% 2% 0 2%;
+}
+
+.experience-block {
+	padding: 1% 2% 1% 2%;
+	font-size: var(--font-xl);
+}
+
+.experience-block-title {
+	display: flex;
+	align-items: center;
+}
+
+.experience-block-text {
+	padding: 1% 2% 1% 10%;
+	font-size: var(--font-l);
 }
