@@ -1,13 +1,13 @@
 :root {
 	--dark-bg: #0b132b;
 	--light-bg: #1c2541;
-	--bright-purple: #787cfe;
-	--turq: #34a8c5;
+	--primary-color: #1c2541;
+	--second-color: #ACC7B4;
 	--breakpoint: 700px;
 	--top-pad: 5vh;
 	--font-xxl: 4vh;
 	--font-xl: 1.5vw;
-	--font-l: 1.2vw;
+	--font-l: 1.1vw;
 	--font-m: 1vw;
 }
 
@@ -25,7 +25,7 @@
 body {
 	background-color: var(--dark-bg);
 	font-family: inter18;
-	color: var(--bright-purple);
+	color: var(--primary-color);
 }
 
 h1 {
@@ -101,13 +101,13 @@ a {
 #avatar {
 	width: 100%;
 	border-radius: 20px;
-	border: 4px solid var(--bright-purple);
+	border: 4px solid var(--second-color);
 	object-fit: contain;
 }
 
 #name-social-container {
 	display: grid;
-	color: var(--turq);
+	color: var(--second-color);
 	place-items: center;
 	text-align: center;
 }
@@ -121,7 +121,7 @@ a {
 }
 
 .social-icon {
-	color: var(--bright-purple);
+	color: var(--second-color);
 	padding-left: 12px;
 	padding-right: 12px;
 }
@@ -135,14 +135,14 @@ a {
 }
 
 .skill-block {
-	padding: 0.8cqw;
+	padding: 0.8cqw 0;
 	justify-self: center;
 	text-align: center;
-	background: var(--bright-purple);
-	color: var(--dark-bg);
-	border-radius: 30px;
-	margin: 0.8cqw;
-	width: 95%;
+	background: var(--primary-color);
+	color: var(--second-color);
+	border-radius: 3px;
+	margin: 0.8cqw 0;
+	width: 100%;
 	font-size: var(--font-l);
 }
 
@@ -151,19 +151,20 @@ a {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: space-around;
-	padding: 0.2cqw;
+	padding: 2cqh 0.2cqw;
 	margin-bottom: 10%;
-	border: dashed 2px var(--bright-purple);
+	width: 100%;
+	border: dashed 2px var(--primary-color);
 }
 
 .skill-bubble {
 	padding: 0.8cqw;
 	margin: 0.4cqw;
 	text-align: center;
-	background: var(--turq);
+	background: var(--second-color);
 	color: var(--dark-bg);
 	font-size: var(--font-m);
-	border-radius: 30px;
+	border-radius: 10px;
 	min-width: 50px;
 }
 
@@ -188,7 +189,7 @@ a {
 		/*margin-top: calc(var(--top-pad));*/
 		width: 4px;
 		height: calc(100% - var(--top-pad) - 5px);
-		background: var(--bright-purple);
+		background: var(--primary-color);
 	}
 
 	.timeline-item {
@@ -201,7 +202,8 @@ a {
 			border-radius: 20px;
 			text-align: center;
 			padding: 7px;
-			background: var(--bright-purple);
+			background: var(--primary-color);
+			color: var(--second-color);
 			border: solid 2px var(--light-bg);
 			font-size: var(--font-l);
 		}
@@ -214,7 +216,7 @@ a {
 		}
 
 		.timeline-body {
-			background: var(--turq);
+			background: var(--second-color);
 			border-radius: 10px;
 			position: relative;
 			margin-left: 3cqw;
@@ -239,13 +241,14 @@ a {
 
 			.timeline-title {
 				margin-bottom: 2vh;
-				background: var(--bright-purple);
+				background: var(--primary-color);
 				padding: 10px;
 				border-radius: 3px;
 				border: solid 2px var(--dark-bg);
 				text-align: center;
 				font-size: var(--font-l);
 				box-shadow: 0 0 5px var(--dark-bg);
+				color: var(--second-color);
 			}
 
 			.timeline-text {
@@ -265,7 +268,8 @@ a {
 	margin: 1%;
 	padding: 2%;
 	font-size: var(--font-xxl);
-	border: dashed 2px var(--bright-purple);
+	border: dashed 2px var(--second-color);
+	color: var(--second-color);
 }
 
 .experience-item {
@@ -275,20 +279,33 @@ a {
 .experience-item-title {
 	display: flex;
 	align-items: center;
-	background: var(--turq);
+	background: var(--second-color);
 	color: var(--dark-bg);
 	padding: 2%;
 	font-size: var(--font-xl);
-	border: solid 2px var(--bright-purple);
+	border: solid 2px var(--primary-color);
 	border-radius: 30px;
 }
 
 .experience-item-title-icon {
 	margin: 0 2% 0 2%;
+	color: var(--primary-color);
 }
 
 .experience-item-title-text {
-	margin: 1% 2% 0 2%;
+	margin: 1% 2%;
+	color: var(--primary-color);
+	align-self: center;
+}
+
+.experience-list-item-icon {
+	margin: 0 2% 0 2%;
+	color: var(--second-color);
+}
+
+.experience-list-item-text {
+	margin: 1% 2%;
+	color: var(--second-color);
 }
 
 .experience-block {
