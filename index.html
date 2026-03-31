@@ -15,51 +15,123 @@
 
 			<div id="info-container" class="column">
 				<div id="info">
-					<div>
-						<img id="avatar" src="assets/images/headshot.jpg"/>
-					</div>
+					<img id="avatar" src="assets/images/headshot.jpg"/>
 					<div id="name-social-container">
-						<span class="font-xxl padtb12">Sara Doan</span>
-						<span class="font-xl padtb4">NSF Graduate Research Fellow</span>
-						<span class="font-xl padtb4">Astrophysics Graduate Researcher</span>
-						<span class="font-xl padtb4">Software Engineer</span>
-						<span class="font-l padtb4">Virginia, USA</span>
+						<span class="font-xxl info-label">Sara Doan</span>
+						<span class="font-xl info-label">NSF Graduate Research Fellow</span>
+						<span class="font-xl info-label">Astrophysics Graduate Researcher</span>
+						<span class="font-xl info-label">Software Engineer</span>
+						<span class="font-l info-label">Virginia, USA</span>
 						<div id="social-container">
-							<a href="https://github.com/galactic-fireball"><span class="fa-brands fa-square-github fa-2xl pad4 social-icon"></span></a>
-							<a href="https://www.linkedin.com/in/sara-doan-17147220/"><span class="fa-brands fa-linkedin fa-2xl pad4 social-icon"></span></a>
-							<a href="https://orcid.org/0000-0003-3152-4328"><span class="fa-brands fa-orcid fa-2xl pad4 social-icon"></span></a>
-							<a href="https://www.upwork.com/freelancers/~0165ec815bd8b1564a"><span class="fa-brands fa-square-upwork fa-2xl pad4 social-icon"></span></a>
+							<div class="social-block">
+								<a href="https://github.com/galactic-fireball"><span class="fa-brands fa-square-github fa-3x pad4 social-icon" aria-labelledby="github-label"></span></a>
+								<div class="tooltip" id="github-label">GitHub</div>
+							</div>
+							<div class="social-block">
+								<a href="https://www.linkedin.com/in/sara-doan-17147220/"><span class="fa-brands fa-linkedin fa-3x pad4 social-icon" aria-labelledby="linkedin-label"></span></a>
+								<div class="tooltip" id="linkedin-label">LinkedIn</div>
+							</div>
+							<div class="social-block">
+								<a href="https://orcid.org/0000-0003-3152-4328"><span class="fa-brands fa-orcid fa-3x pad4 social-icon" aria-labelledby="orcid-label"></span></a>
+								<div class="tooltip" id="orcid-label">ORCID</div>
+							</div>
+							<div class="social-block">
+								<a href="mailto:sdoan1@gmail.com"><span class="fa-brands fa-google fa-3x pad4 social-icon" aria-labelledby="gmail-label"></span></a>
+								<div class="tooltip" id="gmail-label">Gmail</div>
+							</div>
+							<div class="social-block">
+								<a href="mailto:sdoan2@gmu.edu"><span class="fa-solid fa-envelope fa-3x pad4 social-icon" aria-labelledby="gmu-label"></span></a>
+								<div class="tooltip" id="gmu-label">GMU</div>
+							</div>
+							<div class="social-block">
+								<a href="assets/Sara_Doan_CV_Resume.pdf" target="_blank"><span class="fa-solid fa-file-lines fa-3x pad4 social-icon" aria-labelledby="cv-label"></span></a>
+								<div class="tooltip">CV/Resume</div>
+							</div>
+							<!-- <a href="https://www.upwork.com/freelancers/~0165ec815bd8b1564a"><span class="fa-brands fa-square-upwork fa-2xl pad4 social-icon"></span></a> -->
 							<!-- <a href="#"><span class="fa-brands fa-stack-overflow fa-xl pad4 social-icon"></span></a> -->
 							<!-- <a href="#"><span class="fa-brands fa-square-reddit"></span></a> -->
 							<!-- <a href="#"><span class="fa-brands fa-kaggle fa-xl pad4 social-icon"></span></a> -->
+						</div>
+					</div>
+					<div id="about-me-container">
+						<div id="about-me-label">About Me</div>
+						<div id="about-me-content">
+							As someone who is naturally curious and constantly on the hunt for new challenges, my life path has certainly not been linear. After graduating from Allegheny College in 2011 with a B.S. in Computer Science, I worked in industry as a software engineer and cyber security researcher for 10 years. Eventually, I decided to make the jump and try my hand at astronomy, joining a Physics PhD program at George Mason University (GMU) with little formal physics education. Now, 5 years later, I am a NSF Graduate Research Fellow, researching active galactic nuclei (AGN) and galaxy evolution with the Black Hole-Galaxy Connection Group at GMU.
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div id="skills-container">
+
+				<div id="portfolio" class="skill-block">Portfolio</div>
+				<div class="skill-bubble-container">
+					<a href="https://github.com/galactic-fireball/lyra" class="skill-bubble">
+						Lyra: Spectral Explorer
+						<span class="fa-solid fa-link"></span>
+					</a>
+					<a href="https://github.com/galactic-fireball/daedalus" class="skill-bubble">
+						Daedalus
+						<span class="fa-solid fa-link"></span>
+					</a>
+					<a href="https://github.com/galactic-fireball/BADASS" class="skill-bubble">
+						BADASS Revamp
+						<span class="fa-solid fa-link"></span>
+					</a>
+					<!-- <div class="skill-bubble">This Website</div> -->
+				</div>
+
 				<div id="languages" class="skill-block">Programming Languages</div>
 				<div class="skill-bubble-container">
 					<div class="skill-bubble">Python</div>
+					<div class="skill-bubble">JavaScript/TypeScript</div>
+					<div class="skill-bubble">HTML/CSS</div>
 					<div class="skill-bubble">C</div>
 					<div class="skill-bubble">Java</div>
+					<div class="skill-bubble">SQL</div>
+					<div class="skill-bubble">Objective-C</div>
+					<div class="skill-bubble">x86 and ARM Assembly</div>
 					<div class="skill-bubble">Markdown</div>
 					<div class="skill-bubble">Latex</div>
 					<div class="skill-bubble">IDL</div>
-					<div class="skill-bubble">JavaScript</div>
-					<div class="skill-bubble">Objective-C</div>
-					<div class="skill-bubble">HTML/CSS</div>
 				</div>
 
 				<div id="technical-skills" class="skill-block">Technical Skills</div>
 				<div class="skill-bubble-container">
-					<div class="skill-bubble">Pandas</div>
-					<div class="skill-bubble">NumPy</div>
-					<div class="skill-bubble">matplotlib</div>
-					<div class="skill-bubble">plotly</div>
-					<div class="skill-bubble">Spectral Analysis</div>
-					<div class="skill-bubble">HPC with Slurm</div>
-					<div class="skill-bubble">Reverse Engineering</div>
+					<fieldset class="skill-group">
+						<legend class="skill-group-label">Software Development</legend>
+						<div class="skill-bubble">git</div>
+						<div class="skill-bubble">bash</div>
+						<div class="skill-bubble">pdb/lldb</div>
+						<div class="skill-bubble">Pandas</div>
+						<div class="skill-bubble">NumPy</div>
+						<div class="skill-bubble">matplotlib</div>
+						<div class="skill-bubble">plotly</div>
+						<div class="skill-bubble">Flask</div>
+						<div class="skill-bubble">REST APIs</div>
+						<div class="skill-bubble">Jinja</div>
+						<div class="skill-bubble">Pydantic</div>
+						<div class="skill-bubble">mkdocs</div>
+						<div class="skill-bubble">Makefiles</div>
+						<div class="skill-bubble">API Documentation</div>
+						<div class="skill-bubble">Web Scraping</div>
+					</fieldset>
+					<fieldset class = "skill-group">
+						<legend class="skill-group-label">Scientific Research</legend>
+						<div class="skill-bubble">Spectral Analysis</div>
+						<div class="skill-bubble">Bayesian Statistics</div>
+						<div class="skill-bubble">HPC with Slurm</div>
+						<div class="skill-bubble">Data Cleaning</div>
+						<div class="skill-bubble">Data Analysis</div>
+						<div class="skill-bubble">Data Visualization</div>
+						<div class="skill-bubble">Scientific Writing</div>
+					</fieldset>
+					<fieldset class="skill-group">
+						<legend class="skill-group-label">Cyber Security</legend>
+						<div class="skill-bubble">Reverse Engineering</div>
+						<div class="skill-bubble">Vulnerability Assessment</div>
+						<div class="skill-bubble">Software Fuzz Testing</div>
+					</fieldset>
 				</div>
 
 				<div id="soft-skills" class="skill-block">Soft Skills</div>
@@ -67,14 +139,9 @@
 					<div class="skill-bubble">Verbal Communication</div>
 					<div class="skill-bubble">Written Communication</div>
 					<div class="skill-bubble">Collaboration Across Time & Space</div>
-				</div>
-
-				<div id="portfolio" class="skill-block">Portfolio</div>
-				<div class="skill-bubble-container">
-					<div class="skill-bubble">Spectra Explorer</div>
-					<div class="skill-bubble">Daedalus</div>
-					<div class="skill-bubble">BADASS Revamp</div>
-					<div class="skill-bubble">This Website</div>
+					<div class="skill-bubble">Mentoring & Teaching</div>
+					<div class="skill-bubble">Critical Thinking</div>
+					<div class="skill-bubble">Attention to Detail</div>
 				</div>
 
 				<div id="hobbies" class="skill-block">Hobbies</div>
@@ -94,12 +161,14 @@
 						<div class="timeline-break"></div>
 						<div class="timeline-body">
 							<div class="timeline-title"><a href="#gra">Graduate Research Assistant</a></div>
-							<div class="timeline-text">
-								<div>NSF Graduate Research Fellow</div>
-								<div>2 First Author Papers Published</div>
-								<div>JWST Cycle 4 Proposal Award</div>
-								<div>Poster Presentation at AAS</div>
-							</div>
+							<ul class="timeline-text">
+								<li>NSF Graduate Research Fellow</li>
+								<li>Research Focus in Black Hole and Galaxy Co-Evolution and Active Galactic Nuclei (AGN)</li>
+								<li>2 First Author Papers Published</li>
+								<li>JWST Cycle 4 Proposal Award</li>
+								<li>Poster Presentation at AAS</li>
+								<li>Member of Leadership Council for Spectrum, a Student-Empowerment Organization</li>
+							</ul>
 						</div>
 					</div>
 
@@ -110,11 +179,11 @@
 						<div class="timeline-break"></div>
 						<div class="timeline-body">
 							<div class="timeline-title"><a href="#gmu">GMU Student Researcher</a></div>
-							<div class="timeline-text">
-								<div>Black Hole-Galaxy Connection Group</div>
-								<div>Observing Run at W.M. Keck Observatory</div>
-								<div>Oral Presentation at AAS</div>
-							</div>
+							<ul class="timeline-text">
+								<li>Black Hole-Galaxy Connection Group</li>
+								<li>Observing Run at W.M. Keck Observatory</li>
+								<li>Oral Presentation at AAS</li>
+							</ul>
 						</div>
 					</div>
 
@@ -125,9 +194,9 @@
 						<div class="timeline-break"></div>
 						<div class="timeline-body">
 							<div class="timeline-title"><a href="#software-engineer">Principal Software Engineer & Team Lead</a></div>
-							<div class="timeline-text">
-								<div>Successful Software Engineer, Team Lead, and Operations Technical Advisor at MITRE, Parsons, and Novetta</div>
-							</div>
+							<ul class="timeline-text">
+								<li>Successful Software Engineer, Team Lead, and Operations Technical Advisor at MITRE, Parsons, and Novetta</li>
+							</ul>
  						</div>
 					</div>
 
@@ -138,11 +207,11 @@
  						<div class="timeline-break"></div>
 						<div class="timeline-body">
 							<div class="timeline-title"><a href="#allegheny">Allegheny College</a></div>
-							<div class="timeline-text">
-								<div>BS in Computer Science</div>
-								<div>2 REUs Completed</div>
-								<div>NCAA Scholar Athlete</div>
-							</div>
+							<ul class="timeline-text">
+								<li>BS in Computer Science</li>
+								<li>2 REUs Completed</li>
+								<li>NCAA Scholar Athlete</li>
+							</ul>
 						</div>
 					</div>
 
@@ -179,7 +248,7 @@
 				<div class="experience-block">
 					<div class="experience-block-title">
 						<div class="fa-solid fa-star experience-list-item-icon"></div>
-						<div class="experience-list-item-text">CLASSQ Catalog Project</div>
+						<div class="experience-list-item-text">CLASS-Q Catalog Project</div>
 					</div>
 					<!-- <div class="experience-block-text">Something interesting</div> -->
 				</div>
